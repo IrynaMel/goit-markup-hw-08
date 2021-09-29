@@ -1,0 +1,202 @@
+.backdrop{
+    position: fixed;
+    top: 0px; 
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 420px;
+    height: 581px;
+    border-radius: 4px;
+    padding: 40px;
+
+    background-color: #FFFFFF;  
+    @media screen and (min-width:480px) {
+        width: 450px
+    }
+    @media screen and (min-width:1200px) {
+        width: 528px;
+    }
+}
+
+.modal__close-button{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+   width: 30px;
+   height: 30px;
+   border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 0px;
+
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.modal__close-button:hover .modal__close-icon,
+.modal__close-button:focus .modal__close-icon{
+    fill: var(--logo-tex-color)
+}
+
+.modal__head{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.17;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 12px;
+}
+
+.modal__label{
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 4px;
+
+}
+.modal__form-fild{
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+.modal__form-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    .modal__form-fild:hover &,
+    .modal__form-fild:focus &{
+    border-color: var(--logo-tex-color);
+}
+
+}
+.modal__form-icon{
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .modal__form-fild:hover &,
+    .modal__form-fild:focus &{
+    fill:var(--logo-tex-color);
+}
+}
+
+
+
+
+.modal__coment{
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+    border-color: var(--logo-tex-color);
+}
+
+    &::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 14px;
+
+}
+}
+
+
+.modal__checkbox{
+    font-size: 12px;
+    line-height: 1.71;
+    margin-bottom: 20px;
+    
+}
+.modal__label{
+    display: flex;
+}
+.modal__checkbox--conditions{
+    color: var(--logo-tex-color);
+    text-decoration: underline;
+}
+.modal__icon-box{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 7px;
+    margin-left: 0px;
+}
+.modal__icon-vector{
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -2px;
+    fill: none;
+}
+.modal__checkbox:checked + .modal__icon-box > .modal__icon-vector {
+    background-color: #188CE8;
+    fill: var(--header-color);
+    border-radius: 2px;
+}
+.modal__checkbox-text{
+    font-size: 11px;
+    line-height: 1.71;
+    margin-top: -3px;
+    color: #757575;
+    letter-spacing: 00.03em;
+    @media screen and (min-width:480px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    }
+}
+.modal__button-form{
+    width: 200px;
+    height: 50px;
+    background-color: var(--logo-tex-color);
+    color: var(--header-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-left: 60px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: var(--card-shadow);
+    @media screen and (min-width:1200px) {
+        margin-left: 120px;
+    }
+}
