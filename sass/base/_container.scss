@@ -8,12 +8,10 @@ body{
     letter-spacing: 0.03em;}
 
     .section{
-        padding-top: 120px;
-        padding-bottom: 0px;
-        @media screen  and (min-width:768px){
+        
             padding-top: 60px;  
             padding-bottom: 60px;
-        }
+        
         @media screen and (min-width:1200px) {
             padding-top: 94px;
             padding-bottom: 94px;            
@@ -40,9 +38,13 @@ body{
     .heads{
         color: var(--main-text-color);
         font-weight: bold;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         text-align: center;
-        margin-bottom:50px;
+        margin-bottom:30px;
+        @media screen and (min-width:1200px) {
+            font-size: 36px;
+            margin-bottom:50px;
+        }
     
     }

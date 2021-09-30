@@ -7,15 +7,8 @@ body {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -53,10 +46,17 @@ body {
 .heads {
   color: var(--main-text-color);
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .heads {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 h1,
@@ -369,15 +369,10 @@ a {
   background-color: #188CE8;
 }
 
-.advantages {
-  margin-top: -60px;
-}
-
 @media screen and (min-width: 768px) {
   .advantages {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0px;
     margin: -15px;
   }
 }
@@ -431,6 +426,12 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__head {
+    text-align: left;
+  }
 }
 
 .advantages__text {
@@ -502,6 +503,10 @@ a {
   margin-right: auto;
 }
 
+.worker:last-child {
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .worker {
     flex-basis: calc(100% / 2 - 30px);
@@ -567,13 +572,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .clients {
-    margin-bottom: 0px;
-  }
 }
 
 .clients__item {
@@ -1047,7 +1045,7 @@ a {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1200p) {
+@media screen and (min-width: 1200px) {
   .buttons-section {
     padding-top: 94px;
     margin-bottom: 50px;
@@ -1094,7 +1092,7 @@ a {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200p) {
+@media screen and (min-width: 1200px) {
   .portfolio {
     padding-bottom: 94px;
   }
@@ -1269,6 +1267,12 @@ a {
   color: #2196F3;
 }
 
+.menu__contacts-section {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+}
+
 .menu__contacts {
   display: flex;
   flex-direction: column;
@@ -1279,7 +1283,6 @@ a {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
-  margin-top: 302px;
 }
 
 .menu__mail {

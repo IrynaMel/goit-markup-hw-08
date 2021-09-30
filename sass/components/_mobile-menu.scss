@@ -74,6 +74,12 @@
     }
 
 }
+.menu__contacts-section{
+    
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+}
 
 .menu__contacts{
     display: flex;
@@ -84,7 +90,6 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
-    margin-top: 302px;
 }
 .menu__mail{
     color: #757575;
