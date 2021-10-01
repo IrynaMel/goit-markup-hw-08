@@ -512,11 +512,17 @@ a {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
   }
+  .worker:last-child {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .worker {
     flex-basis: calc(100%/4 - 30px);
+  }
+  .worker:last-child {
+    margin-bottom: 15px;
   }
 }
 
